@@ -1,3 +1,12 @@
+#root {
+  background-color: #302A40;
+  font-family: Cambria, serif;
+  height: 100vh; /* 100% of viewport height */
+  width: 100vw; /* 100% of viewport width */
+  margin: 0;    /* Remove default margins */
+  padding: 0;   /* Remove default padding */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -1,14 +1,12 @@
-// For the top search bar and logo
-
 import React from 'react';
+import './Header.css';
+import logo from '../../images/NavbarLogo.png';
 
 function Header() {
   return (
     <header>
-      {/* Search bar */}
-      <input type="text" placeholder="Search..." />
       {/* Logo */}
-      <img src="your-logo.png" alt="Your Logo" />
+      <img src={logo} alt="Your Logo" />
       {/* Navigation buttons */}
       <button>Home</button>
       <button>Hot</button>

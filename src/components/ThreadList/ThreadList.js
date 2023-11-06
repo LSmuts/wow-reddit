@@ -5,15 +5,14 @@ import './ThreadList.css';
 
 function ThreadList({ threads }) {
   return (
-    <main>
-      <ul>
-        {threads.map((thread) => (
-          <li key={thread.id}>
-            <a href={thread.url}>{thread.title}</a>
-          </li>
-        ))}
-      </ul>
-    </main>
+    <ul>
+      {threads.map((thread) => (
+        <li key={thread.id}> {/* Add a unique 'key' prop */}
+          <h3>{thread.title}</h3>
+          <p>{thread.body}</p>
+        </li>
+      ))}
+    </ul>
   );
 }
 

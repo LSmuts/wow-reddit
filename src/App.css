@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Cambria, serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #302a40;
 }
 
 .App {
@@ -11,33 +11,7 @@ body {
   padding: 20px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0079d3;
-  color: white;
-  padding: 10px;
-}
-
-input[type="text"] {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  width: 300px;
-  margin-right: 20px;
-}
-
-img {
-  max-width: 100px;
-}
-
-button {
-  background: none;
-  border: none;
-  color: white;
-  margin: 0 10px;
-  cursor: pointer;
-  font-size: 16px;
+.loading-indicator {
+  font-size: 18px;
+  color: #555;
 }
