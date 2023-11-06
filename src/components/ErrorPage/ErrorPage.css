@@ -1,10 +1,10 @@
 div {
-    background-color: #ff6666;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  background-color: transparent; /* Change to preferred background color or 'transparent' to remove it */
+  color: inherit; /* Change to preferred text color */
+  padding: 0; /* Change this to adjust the padding as needed */
+  border-radius: 0; /* Remove border radius or set it to preferred value */
+  box-shadow: none; /* Remove box shadow or customize it */
+}
   
   h2 {
     font-size: 24px;

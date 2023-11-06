@@ -1,30 +1,31 @@
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0079d3;
-    color: pink; /* To style the text color of the header */
+    flex-direction: column;
+    align-items: flex-start;
     padding: 10px;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 300px;
-    margin-right: 20px;
   }
   
   img {
     max-width: 90px;
+    margin-bottom: 10px;
   }
   
-  button {
+  .buttons-container {
+    display: flex; /* Use flex to make it a flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    background-color: transparent; /* Change to preferred background color or 'transparent' to remove it */
+    color: inherit; /* Change to preferred text color */
+    padding: 0; /* Change this to adjust the padding as needed */
+    border-radius: 0; /* Remove border radius or set it to preferred value */
+    box-shadow: none; /* Remove box shadow or customize it */
+  }
+  
+  .buttons-container button {
     background: none;
     border: none;
     color: #000;
-    margin: 0 10px;
+    margin: 5px 0;
     cursor: pointer;
     font-size: 16px;
   }
