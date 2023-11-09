@@ -5,7 +5,7 @@ import './Sidebar.css';
 
 function Sidebar({ featuredSubreddits }) {
   return (
-    <aside>
+    <div className="featured-subs">
       <h2>Featured Subreddits</h2>
       <ul>
         {featuredSubreddits.map((subreddit) => (
@@ -14,7 +14,7 @@ function Sidebar({ featuredSubreddits }) {
           </li>
         ))}
       </ul>
-    </aside>
+    </div>
   );
 }
 

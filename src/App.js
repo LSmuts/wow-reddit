@@ -40,15 +40,21 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <Header /> {/* Should be included once here */}
-        <SearchBar />
-        {loading ? (
-          <div className="loading-indicator">Loading...</div>
-        ) : (
-          <ThreadList threads={posts} />
-        )}
-        <Sidebar featuredSubreddits={['wow', 'warcraftlore', 'classicwow', 'wowhardcore', 'World_of_Warcraft']} />
+      <div className="app-container">
+        
+        <Header style={{ flex: '1' }} />
+  
+        <div className="middle-section">
+          <SearchBar />
+          {loading ? (
+            <div className="loading-indicator">Loading...</div>
+            ) : (
+            <ThreadList className="main" threads={posts} />
+            )}
+        </div>
+
+        <Sidebar style={{ flex: '1' }} featuredSubreddits={['wow', 'warcraftlore', 'classicwow', 'wowhardcore', 'World_of_Warcraft']} />
+
         <Routes>
           <Route path="/" element={<Home trendingThreads={posts} />} />
           <Route path="/subreddit/:subredditName" element={<Subreddit subredditName={subreddit} subredditThreads={posts} />} />
@@ -56,7 +62,7 @@ function App() {
         </Routes>
       </div>
     </Router>
-  );
+  );  
 }
 
 export default App;

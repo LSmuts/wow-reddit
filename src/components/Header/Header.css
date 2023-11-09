@@ -1,31 +1,34 @@
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 150px;
+  margin: 0 50px;
+  padding: 10px;
+}
   
-  img {
-    max-width: 90px;
-    margin-bottom: 10px;
-  }
+img {
+  max-width: 90px;
+  margin-bottom: 10px;
+}
   
-  .buttons-container {
-    display: flex; /* Use flex to make it a flex container */
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start (left) */
-    background-color: transparent; /* Change to preferred background color or 'transparent' to remove it */
-    color: inherit; /* Change to preferred text color */
-    padding: 0; /* Change this to adjust the padding as needed */
-    border-radius: 0; /* Remove border radius or set it to preferred value */
-    box-shadow: none; /* Remove box shadow or customize it */
-  }
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
   
-  .buttons-container button {
-    background: none;
-    border: none;
-    color: #000;
-    margin: 5px 0;
-    cursor: pointer;
-    font-size: 16px;
-  }
+.buttons-container button {
+  background: none;
+  border: none;
+  color: #000;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}

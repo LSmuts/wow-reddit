@@ -5,10 +5,25 @@ body {
   background-color: #302a40;
 }
 
-.App {
+.app-container {
   display: flex;
-  align-items: flex-start;
-  padding: 20px;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.app-container > Header,
+.app-container > .middle-section,
+.app-container > Sidebar {
+  display: inline;
+}
+
+.middle-section {
+  flex: 1; /* Take up the remaining space */
+  display: flex; /* Enable flex layout for nested elements */
+  justify-content: center; /* Optional: Center content horizontally */
+  align-items: center; /* Optional: Center content vertically */
 }
 
 .loading-indicator {
