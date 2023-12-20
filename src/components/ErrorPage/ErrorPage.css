@@ -1,16 +1,17 @@
-div {
-  background-color: transparent; /* Change to preferred background color or 'transparent' to remove it */
-  color: inherit; /* Change to preferred text color */
-  padding: 0; /* Change this to adjust the padding as needed */
-  border-radius: 0; /* Remove border radius or set it to preferred value */
-  box-shadow: none; /* Remove box shadow or customize it */
+.error-container {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #d9534f;
+  border-radius: 4px;
+  background-color: #f2dede;
+  color: #a94442;
 }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 16px;
-  }
+
+.error-container h2 {
+  color: #a94442;
+}
+
+.error-container p {
+  color: #a94442;
+}

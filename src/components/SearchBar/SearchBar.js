@@ -1,16 +1,36 @@
-// For the Searchbar at the top of the page
-
-import React from 'react';
+import React, { useState } from 'react';
 import './SearchBar.css';
 
-function SearchBar() {
+// Functional component for displaying a search bar
+function SearchBar({ onSearch }) {
+  // State for the search query
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Event handler for input change
+  const handleInputChange = (event) => {
+    const newSearchQuery = event.target.value;
+    setSearchQuery(newSearchQuery);
+
+    // Call the onSearch prop with the updated search query
+    if (onSearch) {
+      onSearch(newSearchQuery);
+    }
+  };
+
   return (
+    // Container for the search bar with a specific class for styling
     <div className="search-bar-container">
-      <input type="text" placeholder="Search..." />
+      {/* Input element for the search bar with a specific id, placeholder text, and onChange event */}
+      <input
+        id="search"
+        type="text"
+        placeholder="Search..."
+        value={searchQuery}
+        onChange={handleInputChange}
+      />
       {/* Add any search button or functionality here */}
     </div>
   );
 }
-
 
 export default SearchBar;

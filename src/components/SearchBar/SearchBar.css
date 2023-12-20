@@ -2,31 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  padding: 10px;
-  max-width: 790px;
-  color: inherit; /* Change to preferred text color */
-  border-radius: 0; /* Remove border radius or set it to preferred value */
-  box-shadow: none; /* Remove box shadow or customize it */
-}
-
-.search-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: transparent;
-  padding: 10px;
-  color: white;
+  padding: 40px 10px 40px 10px;
   max-width: 790px;
   border-radius: 5px;
   box-shadow: none;
+  background-color: transparent;
+  color: inherit;
 }
-  
-  input[type="text"] {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 300px;
-    margin-right: 20px;
-  }
+
+.search-bar {
+  background-color: transparent;
+  color: white;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+  margin-right: 20px;
+}
